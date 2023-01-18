@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Converter</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1> Font converter</h1>
+        </div>
+        <form onSubmit= "changeFont(event)">
+            <p> <label class="printxt" for="headlable">Enter your text here: </label></p>
+            <br>
+            <textarea id="textinput" name="textinput" rows="5" cols="43" placeholder="Enter Text Here"></textarea><br> 
+            <label for="cars" class="printxt"> Choose your Font Style</label>
+
+            <select name="fonts" id="fonts">
+                <option value="'Montserrat', sans-serif;">Montserrat</option>
+                <option value="'Roboto Condensed', sans-serif;">Roboto Condensed</option>
+                <option value= "'Ubuntu', sans-serif; ">Ubuntu</option>
+            </select>
+            <br>
+            <br>
+            <input type ="submit" value = "Submit" >
+        </form>
+        <br>
+        <br>
+        <label for = "Output" class = "printxt">Converted Text: </label>
+        <br>
+        <br>
+        <textarea id = "newtext" rows ="5" cols="43" placeholder="Your Converted Text"></textarea><br>
+    </div>
+    <footer>
+        <a href = "https://github.com/ayeshakhatoon17" target ="_blank">Github</a><br><br>
+        &copy; copyrights.All Rights Reserved.
+        <span id = "date"></span>
+    </footer>
+    <script>
+    // update the date in the footer.
+    document.getElementById("date").innerText = new Date().getFullYear();
+    function changeFont(event) {
+      // prevent the page from reloading.
+      event.preventDefault();
+      //  Getting input from user text area.
+      let text = document.getElementById("textinput").value;
+      console.log(text);
+    // Gettting Font name from select Drop down menu
+      let Fontname = document.getElementById("fonts").value;
+      console.log(Fontname);
+
+      // this is the element that has the output text area.
+      let formattedtext = document.getElementById("newtext");
+      console.log(formattedtext);
+    // changing text of the output text area.
+      formattedtext.innerText = text;
+      // adding a font style for output text area
+      formattedtext.style.fontFamily = Fontname;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Roboto Condensed', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   background-color:rgb(231, 201, 158); 
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   text-align: center;
+}
+
+.head{
+ justify-content: center;
+ align-items: center;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ background-color: bisque;
+ font-size: 25px;
+ color :rgb(49, 48, 48);
+ padding: 5px;
+ margin-bottom: 40px;
+}
+
+.printxt{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin:20px;
+    padding: 20px;
+}
+
+textarea{
+    width: 60vw;
+    box-shadow: #3b1e1e;
+    height:2/5fr;
+    margin:20px;
+    border:3px solid black;
+    border-radius: 15px;
+    padding:10px;
+    font-size:larger;
+}
+
+input[type="submit"]{
+    width: 200px;
+    height:50px;
+    font-size:large;
+    padding:2px;
+    background-color: beige;
+    color:black;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: #3b1e1e;
+}
+
+input[type="submit"]:hover{
+background-color: whitesmoke;
+}
+
+#fonts{
+    width: 30vw;
+    height:30px;
+    font-size: large;
+    border:2px solid black;
+    color:#3b1e1e;
+    font-weight: bold;
+}
+
+footer{
+    left:0;
+    bottom: 0px;;
+    width:100%;
+    /* position: fixed; */
+    background-color:beige;
+    color:black;
+    text-align: center;
+    padding:10px 0;
+    font-weight: bold;
+}
+
+a{
+    color:#b440fc;
+}
